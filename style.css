@@ -1,159 +1,108 @@
-
-body { font-family: Arial, sans-serif;font-size: larger; transition: background 0.3s, color 0.3s; }
-.dark-mode { background-color: #222; color: #fff; }
-.hidden { display: none; }
-.page { padding: 20px; }
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: auto;
-  }
-  
-  .contact-form label {
-    font-weight: bold;
-    margin-top: 10px;
-  }
-  
-  .contact-form input,
-  .contact-form textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .contact-form button {
-    background-color: black;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    margin-top: 10px;
-  }
-  
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
-    gap: 15px; /* Space between images */
-    justify-content: center;
-    padding: 20px;
-  }
-  
-  .gallery-grid img {
-    width: 100%; /* Makes images responsive */
-    height: 250px; /* Set fixed height for consistency */
-    object-fit: cover; /* Ensures images maintain aspect ratio */
-    border-radius: 10px; /* Smooth corners */
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .gallery-grid img:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
-  }
-  
-nav { display: flex; justify-content: space-between; align-items: center; background: #333; color: white; padding: 10px; }
-nav ul { list-style: none; display: flex; gap: 15px; }
-nav a { color: white; text-decoration: none; }
-button { margin-top: 10px; padding: 10px; border: none; background: #444; color: white; cursor: pointer; }
-button:hover { background: #666; }
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center; /* Replace with your image */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: black; /* Change text color for better visibility */
-  }
-  
-  .home-images {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-  }
-  
-  video {
-    width: 300px;
-    height: 200px;
-    border-radius: 10px; /* Optional: Add rounded corners */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Optional: Add shadow */
-  }
-  
-  /* Style the form container */
-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: auto;
+  font-family: Arial, sans-serif;
+  font-size: larger;
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s, color 0.3s;
 }
 
-/* Style the labels */
-form label {
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-/* Style the input fields */
-form input, form textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-/* Style the submit button */
-form button {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-form button:hover {
-    background-color: #555;
+.dark-mode {
+  background-color: #222;
+  color: #fff;
 }
 
 nav {
-    width: 100%;
-    background-color: #333;
-    padding: 15px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  nav h1 {
-    color: white;
-    margin-left: 20px;
-  }
-  
+  background-color: #333;
+  padding: 15px;
+  text-align: right;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.page {
+  padding: 20px;
+  text-align: center;
+}
+
+button {
+  background-color: #444;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin: 20px auto;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Why Choose Us Section */
+.page ul {
+  text-align: left;
+  list-style-position: inside;
+  margin: 20px auto;
+  display: inline-block;
+  text-align: left;
+}
+
+/* Gallery Section */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 300px; /* Fixed height for all images */
+  object-fit: cover; /* Ensures image fills the block without stretching */
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
   nav ul {
     display: flex;
-    justify-content: center;
-    width: 80%;
-    padding: 0;
-    list-style: none;
+    flex-direction: column;
+    align-items: center;
   }
-  
+
   nav ul li {
-    margin: 0 20px;
+    margin: 10px 0;
   }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
+
+  h1 {
+    font-size: 2rem;
   }
-  
-  nav ul li a:hover {
-    text-decoration: underline;
+
+  .page {
+    padding: 10px;
   }
-  
+
+  button {
+    width: 90%;
+    font-size: 1rem;
+  }
+}
