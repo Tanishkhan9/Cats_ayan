@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Persian_CatHub_</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <h1>Persian_CatHub_</h1>
+      <ul>
+        <li><a href="#home" onclick="showPage('home')">Home</a></li>
+        <li><a href="#gallery" onclick="showPage('gallery')">Gallery</a></li>
+        <li><a href="#about" onclick="showPage('about')">About</a></li>
+        <li><a href="#contact" onclick="showPage('contact')">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="page">
+      <h2>Welcome to Persian_CatHub_</h2>
+      <p>Your one-stop destination for adorable Persian cats.</p>
+      <p>
+        We offer a variety of breeds, expert guidance, and all the accessories
+        needed to keep your cat happy and healthy.
+      </p>
+      <button onclick="toggleTheme()">Toggle Dark Mode</button>
+
+      <h3>Why Choose Us?</h3>
+      <ul>
+        <li>Handpicked, healthy cats from trusted breeders.</li>
+        <li>Expert advice on cat care and nutrition.</li>
+        <li>A loving community of cat enthusiasts.</li>
+        <li>Premium cat accessories and toys available.</li>
+        <li>Adoption support and aftercare services.</li>
+      </ul>
+
+      <div class="home-images">
+        <video width="300" height="200" autoplay muted loop>
+          <source src="videos/VID-20250210-WA0001.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <video width="300" height="200" autoplay muted loop>
+          <source src="videos/VID-20250210-WA0002.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <video width="300" height="200" autoplay muted loop>
+          <source src="videos/VID-20250210-WA0003.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="page hidden">
+      <h2>Gallery</h2>
+      <p>Check out our adorable Persian cats!</p>
+
+      <div class="gallery-grid">
+        <img src="videos/IMG-20250210-WA0006.jpg" alt="Fluffy Persian Cat" />
+        <img src="videos/IMG-20250210-WA0011.jpg" alt="White Persian Kitten" />
+        <img src="videos/IMG-20250210-WA0010.jpg" alt="Sleepy Persian Cat" />
+        <img
+          src="videos/IMG-20250210-WA0009.jpg"
+          alt="Playful Persian Kitten"
+        />
+        <img src="videos/IMG-20250210-WA0008.jpg" alt="Elegant Persian Cat" />
+        <img src="videos/IMG-20250210-WA0007.jpg" alt="Cute Persian Cat" />
+      </div>
+
+      <p>Follow us on</p>
+
+      <p>
+        Follow us on
+        <a href="https://www.instagram.com/persian_cathub_/" target="_blank"
+          >Instagram</a
+        >
+        for more cute cat photos!
+      </p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="page hidden">
+      <h2>About Us</h2>
+      <p>At Persian_CatHub_, we are passionate about feline care.</p>
+      <p>
+        Founded in 2020, we connect cat lovers with healthy kittens and provide
+        top-notch guidance on raising happy and well-adjusted pets.
+      </p>
+      <h3>Our Mission</h3>
+      <p>
+        Our goal is to create a warm and welcoming space for cat lovers,
+        ensuring that every cat finds a loving home.
+      </p>
+      <h3>What We Offer</h3>
+      <ul>
+        <li>Adoption services for Persian kittens and cats.</li>
+        <li>Professional advice on cat health and training.</li>
+        <li>Cat grooming and spa services.</li>
+        <li>High-quality cat food and accessories.</li>
+        <li>Community events for cat lovers.</li>
+      </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="page hidden">
+      <h2>Contact Us</h2>
+      <p>We'd love to hear from you! Reach out for any inquiries or support.</p>
+
+      <h3>Our Address</h3>
+      <p>dadabari, kota, Rajasthan</p>
+
+      <h3>Phone</h3>
+      <p>8107092778</p>
+
+      <h3>Email</h3>
+      <p>contact@catshop.com</p>
+
+      <h3>Follow Us</h3>
+      <p>
+        <a href="https://www.instagram.com/persian_cathub_/">Instagram</a>
+      </p>
+
+      <!-- <h2>Send Us a Message</h2>
+      <form action="contact.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form> -->
+    </section>
+  </body>
+</html>
